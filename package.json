@@ -15,6 +15,7 @@
     "@material-ui/icons": "^5.0.0-beta.5",
     "@material-ui/lab": "^5.0.0-alpha.44",
     "@material-ui/styled-engine": "^5.0.0-alpha.11",
+    "@mui/material": "^5.15.16",
     "@types/react-router-dom": "^5.3.3",
     "next": "14.2.3",
     "react": "^18",
