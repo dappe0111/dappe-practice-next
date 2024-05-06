@@ -2,7 +2,7 @@ import Head from "next/head";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import Header from "@/components/LV3/Header";
-import { Button } from "@material-ui/core";
+import { ButtonBase } from "@mui/material";
 import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -22,7 +22,7 @@ export default function Home() {
           <p>Coming Soon...</p>
         </div>
         <Link href="/test">
-          <Button>Test</Button>
+          <ButtonBase>Test</ButtonBase>
         </Link>
       </main>
     </>
