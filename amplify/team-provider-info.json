@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-dappepracticenext-dev-1aeb3-authRole",
+      "UnauthRoleArn": "arn:aws:iam::851725168543:role/amplify-dappepracticenext-dev-1aeb3-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::851725168543:role/amplify-dappepracticenext-dev-1aeb3-authRole",
+      "Region": "ap-northeast-1",
+      "DeploymentBucketName": "amplify-dappepracticenext-dev-1aeb3-deployment",
+      "UnauthRoleName": "amplify-dappepracticenext-dev-1aeb3-unauthRole",
+      "StackName": "amplify-dappepracticenext-dev-1aeb3",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:851725168543:stack/amplify-dappepracticenext-dev-1aeb3/bf204350-0b95-11ef-b276-0ac9cabbfca3",
+      "AmplifyAppId": "d28jamocnk4mzn"
+    },
+    "categories": {
+      "auth": {
+        "dappepracticenextf3a14456": {}
+      }
+    }
+  }
+}
