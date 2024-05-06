@@ -2,8 +2,6 @@ import Head from "next/head";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import Header from "@/components/LV3/Header";
-import { Button } from "@material-ui/core";
-import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,11 +17,8 @@ export default function Home() {
       <Header />
       <main className={`${styles.main} ${inter.className}`}>
         <div className={styles.center}>
-          <p>Coming Soon...</p>
+          <p>Test Page.</p>
         </div>
-        <Link href="/test">
-          <Button>Test</Button>
-        </Link>
       </main>
     </>
   );
