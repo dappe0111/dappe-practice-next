@@ -39,7 +39,12 @@ const Header: React.FC = () => {
     <>
       <AppBar
         position="static"
-        style={{ color: "#ffffff", backgroundColor: "#5f5d5b" }}
+        style={{
+          color: "#ffffff",
+          backgroundColor: "#5f5d5b",
+          position: "fixed",
+          top: "0",
+        }}
       >
         <Toolbar>
           <IconWrap>
