@@ -1,6 +1,6 @@
-import Head from "next/head";
 import Header from "@/components/LV3/Header";
 import styled from "styled-components";
+import CommonMeta from "@/components/LV1/CommonMeta";
 
 const Main = styled.main`
   height: 100vh;
@@ -26,12 +26,7 @@ const Block = styled.div`
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>dappe-practice</title>
-        <meta name="description" content="練習用ページです。" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.svg" />
-      </Head>
+      <CommonMeta title="TOP" />
       <Header />
       <Main>
         <Block>
