@@ -19,8 +19,14 @@ const Block = styled.div`
   height: 640px;
   padding: 32px;
   display: flex;
+  gap: 32px;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+`;
+
+const BlockTitle = styled.div`
+  font-size: 36px;
 `;
 
 export default function Home() {
@@ -30,13 +36,16 @@ export default function Home() {
       <Header />
       <Main>
         <Block>
-          <p>Performance</p>
+          <BlockTitle>Performance</BlockTitle>
+          <p>説明文説明文</p>
         </Block>
         <Block>
-          <p>Game History</p>
+          <BlockTitle>GameHistory</BlockTitle>
+          <p>説明文説明文</p>
         </Block>
         <Block>
-          <p>Coming Soon...</p>
+          <BlockTitle>Coming Soon...</BlockTitle>
+          <p>説明文説明文</p>
         </Block>
       </Main>
     </>
