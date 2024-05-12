@@ -31,25 +31,45 @@ const Block = styled.div`
   }
 `;
 
-const BlockTitle = styled.div<{ noAction?: boolean }>`
+const BlockTitle = styled.div`
   font-size: 64px;
   @media screen and (max-width: 599px) {
     font-size: 32px;
   }
-  ${({ noAction }) =>
-    !noAction &&
-    `
-    transition: 0.4s;
-    &:hover {
-      text-decoration: none;
-      opacity: 0.64;
-    }
-  `}
 `;
 
 const Description = styled.div`
   font-size: 16px;
   line-height: 1.5;
+`;
+
+const ButtonWrap = styled.div`
+  width: 100%;
+  font-size: 16px;
+  padding: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+const Button = styled.div`
+  min-width: 160px;
+  padding: 8px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5f5d5b;
+  border-radius: 4px;
+  transition: 0.4s;
+  &:hover {
+    text-decoration: none;
+    opacity: 0.64;
+  }
+`;
+
+const ButtonText = styled.div`
+  font-size: 32px;
+  color: #ffffff;
 `;
 
 export default function Home() {
@@ -59,27 +79,37 @@ export default function Home() {
       <Header />
       <Main>
         <Block>
-          <Link href="/performance">
-            <BlockTitle>Performance</BlockTitle>
-          </Link>
+          <BlockTitle>Performance</BlockTitle>
           <Description>
             AKAIのEWI SOLOを使って、様々なジャンルの曲を練習しています。
             <br />
             EWI SOLOの多種多様なサウンドをお楽しみください。
           </Description>
+          <ButtonWrap>
+            <Link href="/performance">
+              <Button>
+                <ButtonText>MORE</ButtonText>
+              </Button>
+            </Link>
+          </ButtonWrap>
         </Block>
         <Block>
-          <Link href="/game-history">
-            <BlockTitle>Game History</BlockTitle>
-          </Link>
+          <BlockTitle>Game History</BlockTitle>
           <Description>
             今まで私が生きてきた中でプレイしてきたTVゲームを振り返る場です。
             <br />
             ネタバレがない範囲で、所感やコメントを残しています。
           </Description>
+          <ButtonWrap>
+            <Link href="/game-history">
+              <Button>
+                <ButtonText>MORE</ButtonText>
+              </Button>
+            </Link>
+          </ButtonWrap>
         </Block>
         <Block>
-          <BlockTitle noAction>Coming Soon...</BlockTitle>
+          <BlockTitle>Coming Soon...</BlockTitle>
           <Description>公開までしばらくお待ちください。</Description>
         </Block>
       </Main>
