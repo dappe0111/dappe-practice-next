@@ -23,6 +23,11 @@ const HomeButton = styled(IconButton)`
   display: flex;
   width: 24px;
   padding: 0;
+  transition: 0.4s;
+  &:hover {
+    text-decoration: none;
+    opacity: 0.64;
+  }
 `;
 
 const HomeIcon = styled.img`
