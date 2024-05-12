@@ -17,7 +17,6 @@ const Main = styled.main`
 
 const Block = styled.div`
   width: 100%;
-  height: 640px;
   padding: 32px;
   display: flex;
   gap: 32px;
@@ -27,7 +26,6 @@ const Block = styled.div`
   @media screen and (max-width: 599px) {
     padding: 16px;
     gap: 16px;
-    height: 240px;
   }
 `;
 
