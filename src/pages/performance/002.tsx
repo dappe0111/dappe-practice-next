@@ -19,7 +19,7 @@ const ContentsBlock = styled.div`
   width: 100%;
   padding: 32px;
   display: flex;
-  gap: 32px;
+  gap: 16px;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
@@ -27,6 +27,23 @@ const ContentsBlock = styled.div`
 
 const ContentsTitle = styled.div`
   font-size: 32px;
+`;
+
+const ContentsDescription = styled.div`
+  font-size: 16px;
+  line-height: 1.5;
+  text-indent: -1em;
+  padding-left: 1em;
+`;
+
+const UpdateBlock = styled.div`
+  width: 100%;
+  padding: 32px;
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 
 const ButtonWrap = styled.div`
@@ -66,7 +83,24 @@ export default function Performance() {
       <Main>
         <ContentsBlock>
           <ContentsTitle>名探偵コナンメインテーマ</ContentsTitle>
+          <ContentsDescription>●作曲者：大野克夫</ContentsDescription>
+          <ContentsDescription>
+            ●出典：アニメ「名探偵コナン」
+          </ContentsDescription>
+          <ContentsDescription>
+            ●コメント：
+            <br />
+            言わずと知れた、アニメのオープニング等で流れる有名な楽曲です。
+            <br />
+            現在では様々なアレンジバージョンが存在していて、歌になった事もあります。（初期の頃の劇場版が懐かしい...）
+            <br />
+            <br />
+            今回はイメージ通りアルトサックスの音色を使用し、メイン旋律のみを演奏しました。
+            <br />
+            まだまだテクニックが足りなく、格好よく演奏は出来ないですが、雰囲気だけでも味わってみてください。
+          </ContentsDescription>
         </ContentsBlock>
+        <UpdateBlock>音源貼り付け箇所</UpdateBlock>
         <ButtonWrap>
           <Link href="/performance">
             <Button>
