@@ -23,6 +23,8 @@ const HomeButton = styled(IconButton)`
   display: flex;
   width: 24px;
   padding: 0;
+  border: none;
+  background: none;
   transition: 0.4s;
   &:hover {
     text-decoration: none;
