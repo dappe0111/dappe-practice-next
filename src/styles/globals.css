@@ -87,6 +87,7 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
+  font-family: "VT323", monospace;
   background: linear-gradient(
       to bottom,
       transparent,
