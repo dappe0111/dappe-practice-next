@@ -65,11 +65,11 @@ const ButtonText = styled.div`
 export default function GameHistory() {
   return (
     <>
-      <CommonMeta title="GameHistory" />
+      <CommonMeta title="Game History" />
       <Header />
       <Main>
         <Block>
-          <BlockTitle>GameHistory</BlockTitle>
+          <BlockTitle>Game History</BlockTitle>
           <p>準備中...</p>
         </Block>
         <ButtonWrap>
