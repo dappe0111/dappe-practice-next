@@ -53,7 +53,7 @@ const Header: React.FC = () => {
       >
         <Toolbar>
           <IconWrap>
-            <HomeButton color="inherit">
+            <HomeButton>
               <LinkIcon href="/">
                 <HomeIcon src="/main-icon.svg" alt="" />
               </LinkIcon>
