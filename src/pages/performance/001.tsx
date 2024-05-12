@@ -19,7 +19,7 @@ const ContentsBlock = styled.div`
   width: 100%;
   padding: 32px;
   display: flex;
-  gap: 32px;
+  gap: 16px;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
@@ -27,6 +27,23 @@ const ContentsBlock = styled.div`
 
 const ContentsTitle = styled.div`
   font-size: 32px;
+`;
+
+const ContentsDescription = styled.div`
+  font-size: 16px;
+  line-height: 1.5;
+  text-indent: -1em;
+  padding-left: 1em;
+`;
+
+const UpdateBlock = styled.div`
+  width: 100%;
+  padding: 32px;
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 
 const ButtonWrap = styled.div`
@@ -66,7 +83,22 @@ export default function Performance() {
       <Main>
         <ContentsBlock>
           <ContentsTitle>いつか帰るところ</ContentsTitle>
+          <ContentsDescription>●作曲者：植松伸夫</ContentsDescription>
+          <ContentsDescription>
+            ●出典：ファイナルファンタジーIX
+          </ContentsDescription>
+          <ContentsDescription>
+            ●コメント：
+            <br />
+            ファイナルファンタジーIXのオープニングで流れるBGMです。
+            <br />
+            原曲はメインの旋律とサブの旋律の絶妙な掛け合いがあり、とても幻想的で素敵な楽曲です。
+            <br />
+            <br />
+            今回はオーボエの音色を使用し、メイン旋律のみを演奏しました。
+          </ContentsDescription>
         </ContentsBlock>
+        <UpdateBlock>音源貼り付け箇所</UpdateBlock>
         <ButtonWrap>
           <Link href="/performance">
             <Button>
