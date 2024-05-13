@@ -2,6 +2,7 @@ import Header from "@/components/LV3/Header";
 import styled from "styled-components";
 import CommonMeta from "@/components/LV1/CommonMeta";
 import Link from "next/link";
+import { YouTubeEmbed } from "@next/third-parties/google";
 
 const Main = styled.main`
   height: 100vh;
@@ -44,6 +45,12 @@ const UpdateBlock = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-size: 16px;
+`;
+
+const VideoWrap = styled.div`
+  width: 100%;
+  max-width: 540px;
 `;
 
 const ButtonWrap = styled.div`
@@ -97,10 +104,17 @@ export default function Performance() {
             <br />
             今回はイメージ通りアルトサックスの音色を使用し、メイン旋律のみを演奏しました。
             <br />
+            途中音がよれていますが、人前で演奏している想定で、一発撮りにしました。
+            <br />
             まだまだテクニックが足りなく、格好よく演奏は出来ないですが、雰囲気だけでも味わってみてください。
           </ContentsDescription>
         </ContentsBlock>
-        <UpdateBlock>音源貼り付け箇所</UpdateBlock>
+        <UpdateBlock>
+          ※再生すると音声が流れます。音量にご注意ください。
+          <VideoWrap>
+            <YouTubeEmbed videoid="SqeLhpPZY9o" />
+          </VideoWrap>
+        </UpdateBlock>
         <ButtonWrap>
           <Link href="/performance">
             <Button>
