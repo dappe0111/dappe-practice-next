@@ -2,6 +2,7 @@ import Header from "@/components/LV3/Header";
 import styled from "styled-components";
 import CommonMeta from "@/components/LV1/CommonMeta";
 import Link from "next/link";
+import { YouTubeEmbed } from "@next/third-parties/google";
 
 const Main = styled.main`
   height: 100vh;
@@ -44,6 +45,11 @@ const UpdateBlock = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+`;
+
+const VideoWrap = styled.div`
+  width: 100%;
+  max-width: 540px;
 `;
 
 const ButtonWrap = styled.div`
@@ -98,7 +104,12 @@ export default function Performance() {
             今回はオーボエの音色を使用し、メイン旋律のみを演奏しました。
           </ContentsDescription>
         </ContentsBlock>
-        <UpdateBlock>音源貼り付け箇所</UpdateBlock>
+        <UpdateBlock>
+          ※再生すると音声が流れます。音量にご注意ください。
+          <VideoWrap>
+            <YouTubeEmbed videoid="xW3CefYY4vA" />
+          </VideoWrap>
+        </UpdateBlock>
         <ButtonWrap>
           <Link href="/performance">
             <Button>
