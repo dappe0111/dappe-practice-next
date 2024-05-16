@@ -1,8 +1,7 @@
 import Header from "@/components/LV3/Header";
 import styled from "styled-components";
 import CommonMeta from "@/components/LV1/CommonMeta";
-import Link from "next/link";
-import { YouTubeEmbed } from "@next/third-parties/google";
+import PerformancePage from "@/components/LV3/PerformancePage";
 
 const Main = styled.main`
   height: 100vh;
@@ -16,112 +15,32 @@ const Main = styled.main`
   }
 `;
 
-const ContentsBlock = styled.div`
-  width: 100%;
-  padding: 32px;
-  display: flex;
-  gap: 16px;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-`;
-
-const ContentsTitle = styled.div`
-  font-size: 32px;
-`;
-
-const ContentsDescription = styled.div`
-  font-size: 16px;
-  line-height: 1.5;
-  text-indent: -1em;
-  padding-left: 1em;
-`;
-
-const UpdateBlock = styled.div`
-  width: 100%;
-  padding: 32px;
-  display: flex;
-  gap: 16px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 16px;
-`;
-
-const VideoWrap = styled.div`
-  width: 100%;
-  max-width: 540px;
-`;
-
-const ButtonWrap = styled.div`
-  width: 100%;
-  font-size: 16px;
-  padding: 32px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
-const Button = styled.div`
-  min-width: 160px;
-  padding: 8px 16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #5f5d5b;
-  border-radius: 4px;
-  transition: 0.4s;
-  &:hover {
-    text-decoration: none;
-    opacity: 0.64;
-  }
-`;
-
-const ButtonText = styled.div`
-  font-size: 32px;
-  color: #ffffff;
-`;
-
 export default function Performance() {
+  const contents = {
+    title: "名探偵コナンメインテーマ",
+    composer: "大野克夫",
+    source: "アニメ「名探偵コナン」",
+    comment: `●コメント：
+      <br />
+      言わずと知れた、アニメのオープニング等で流れる有名な楽曲です。
+      <br />
+      現在では様々なアレンジバージョンが存在していて、歌になった事もあります。（初期の頃の劇場版が懐かしい...）
+      <br />
+      <br />
+      今回はイメージ通りアルトサックスの音色を使用し、メイン旋律のみを演奏しました。
+      <br />
+      途中音がよれていますが、人前で演奏している想定で、一発撮りにしました。
+      <br />
+      まだまだテクニックが足りなく、格好よく演奏は出来ないですが、雰囲気だけでも味わってみてください。
+    `,
+    videoId: "SqeLhpPZY9o",
+  };
   return (
     <>
       <CommonMeta title="Performance" />
       <Header />
       <Main>
-        <ContentsBlock>
-          <ContentsTitle>名探偵コナンメインテーマ</ContentsTitle>
-          <ContentsDescription>●作曲者：大野克夫</ContentsDescription>
-          <ContentsDescription>
-            ●出典：アニメ「名探偵コナン」
-          </ContentsDescription>
-          <ContentsDescription>
-            ●コメント：
-            <br />
-            言わずと知れた、アニメのオープニング等で流れる有名な楽曲です。
-            <br />
-            現在では様々なアレンジバージョンが存在していて、歌になった事もあります。（初期の頃の劇場版が懐かしい...）
-            <br />
-            <br />
-            今回はイメージ通りアルトサックスの音色を使用し、メイン旋律のみを演奏しました。
-            <br />
-            途中音がよれていますが、人前で演奏している想定で、一発撮りにしました。
-            <br />
-            まだまだテクニックが足りなく、格好よく演奏は出来ないですが、雰囲気だけでも味わってみてください。
-          </ContentsDescription>
-        </ContentsBlock>
-        <UpdateBlock>
-          ※再生すると音声が流れます。音量にご注意ください。
-          <VideoWrap>
-            <YouTubeEmbed videoid="SqeLhpPZY9o" />
-          </VideoWrap>
-        </UpdateBlock>
-        <ButtonWrap>
-          <Link href="/performance">
-            <Button>
-              <ButtonText>BACK</ButtonText>
-            </Button>
-          </Link>
-        </ButtonWrap>
+        <PerformancePage contents={contents} />
       </Main>
     </>
   );
