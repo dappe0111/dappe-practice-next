@@ -57,7 +57,6 @@ const Description = styled.div`
 const ButtonWrap = styled.div`
   width: 100%;
   font-size: 16px;
-  padding: 32px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -116,9 +115,8 @@ export default function Home() {
           <Block category="performance">
             <BlockTitle>Performance</BlockTitle>
             <Description>
-              AKAIのEWI SOLOを使って、様々なジャンルの曲を練習しています。
-              <br />
-              EWI SOLOの多種多様なサウンドをお楽しみください。
+              AKAIのEWI SOLOを使って、様々なジャンルの曲を練習しています。EWI
+              SOLOの多種多様なサウンドをお楽しみください。
             </Description>
             <ButtonWrap>
               <Link href="/performance">
@@ -131,9 +129,7 @@ export default function Home() {
           <Block category="game">
             <BlockTitle>Game History</BlockTitle>
             <Description>
-              今まで私が生きてきた中でプレイしてきたTVゲームを振り返る場です。
-              <br />
-              ネタバレがない範囲で、所感やコメントを残しています。
+              今まで私が生きてきた中でプレイしてきたTVゲームを振り返る場です。ネタバレがない範囲で、所感やコメントを残しています。
             </Description>
             <ButtonWrap>
               <Link href="/game-history">
