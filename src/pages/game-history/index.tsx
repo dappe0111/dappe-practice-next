@@ -30,7 +30,42 @@ const Block = styled.div`
 `;
 
 const BlockTitle = styled.div`
-  font-size: 36px;
+  font-size: 64px;
+  @media screen and (max-width: 599px) {
+    font-size: 32px;
+  }
+`;
+
+const ContentsBlock = styled.div`
+  width: 100%;
+  padding: 32px;
+  display: flex;
+  gap: 32px;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  @media screen and (max-width: 599px) {
+    flex-direction: column;
+    padding: 16px;
+    gap: 16px;
+  }
+`;
+
+const ContentsWrap = styled.div`
+  width: 50%;
+  display: flex;
+  @media screen and (max-width: 599px) {
+    width: 100%;
+  }
+`;
+
+const ContentsTitle = styled.p`
+  font-size: 16px;
+  transition: 0.4s;
+  &:hover {
+    text-decoration: none;
+    opacity: 0.64;
+  }
 `;
 
 const ButtonWrap = styled.div`
@@ -65,13 +100,19 @@ const ButtonText = styled.div`
 export default function GameHistory() {
   return (
     <>
-      <CommonMeta title="Game History" />
+      <CommonMeta title="GameHistory" />
       <Header />
       <Main>
         <Block>
           <BlockTitle>Game History</BlockTitle>
-          <p>準備中...</p>
         </Block>
+        <ContentsBlock>
+          <ContentsWrap>
+            <Link href="/game-history/001">
+              <ContentsTitle>●ファイナルファンタジーIX</ContentsTitle>
+            </Link>
+          </ContentsWrap>
+        </ContentsBlock>
         <ButtonWrap>
           <Link href="/">
             <Button>
