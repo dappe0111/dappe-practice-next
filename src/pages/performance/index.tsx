@@ -4,8 +4,9 @@ import CommonMeta from "@/components/LV1/CommonMeta";
 import Link from "next/link";
 
 const Main = styled.main`
+  max-width: 1440px;
   height: 100vh;
-  margin-top: 64px;
+  margin: 64px auto 0;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -44,6 +45,7 @@ const ContentsBlock = styled.div`
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
+  flex-wrap: wrap;
   @media screen and (max-width: 599px) {
     flex-direction: column;
     padding: 16px;
@@ -52,7 +54,7 @@ const ContentsBlock = styled.div`
 `;
 
 const ContentsWrap = styled.div`
-  width: 50%;
+  width: calc(50% - 16px);
   display: flex;
   @media screen and (max-width: 599px) {
     width: 100%;
@@ -115,6 +117,11 @@ export default function Performance() {
           <ContentsWrap>
             <Link href="/performance/002">
               <ContentsTitle>●名探偵コナンメインテーマ</ContentsTitle>
+            </Link>
+          </ContentsWrap>
+          <ContentsWrap>
+            <Link href="/performance/003">
+              <ContentsTitle>●恋愛レボリューション21</ContentsTitle>
             </Link>
           </ContentsWrap>
         </ContentsBlock>

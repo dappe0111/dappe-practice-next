@@ -5,6 +5,16 @@ import IconButton from "@mui/material/IconButton";
 import Link from "next/link";
 import styled from "styled-components";
 
+const StyledToolbar = styled(Toolbar)`
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 32px;
+  margin: 0 auto;
+  @media screen and (max-width: 599px) {
+    padding: 0 16px;
+  }
+`;
+
 const IconWrap = styled.div`
   width: 100%;
   display: flex;
@@ -53,7 +63,7 @@ const Header: React.FC = () => {
           top: "0",
         }}
       >
-        <Toolbar>
+        <StyledToolbar>
           <IconWrap>
             <HomeButton>
               <LinkIcon href="/">
@@ -62,7 +72,7 @@ const Header: React.FC = () => {
             </HomeButton>
             <HeaderTitle>dappe-practice</HeaderTitle>
           </IconWrap>
-        </Toolbar>
+        </StyledToolbar>
       </AppBar>
     </>
   );

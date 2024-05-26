@@ -4,8 +4,9 @@ import CommonMeta from "@/components/LV1/CommonMeta";
 import PerformancePage from "@/components/LV3/PerformancePage";
 
 const Main = styled.main`
+  max-width: 1440px;
   height: 100vh;
-  margin-top: 64px;
+  margin: 64px auto 0;
   display: flex;
   justify-content: flex-start;
   align-items: center;

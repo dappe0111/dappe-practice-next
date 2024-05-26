@@ -4,7 +4,8 @@ import CommonMeta from "@/components/LV1/CommonMeta";
 import Link from "next/link";
 
 const Main = styled.main`
-  margin-top: 64px;
+  max-width: 1440px;
+  margin: 64px auto 0;
   display: flex;
   justify-content: flex-start;
   align-items: center;
