@@ -15,10 +15,8 @@ export default function Performance() {
     videoId: "xW3CefYY4vA",
   };
   return (
-    <>
-      <Layout>
-        <PerformancePage contents={contents} />
-      </Layout>
-    </>
+    <Layout title="Performance">
+      <PerformancePage contents={contents} />
+    </Layout>
   );
 }

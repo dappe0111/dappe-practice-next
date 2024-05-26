@@ -89,36 +89,34 @@ const ButtonText = styled.div`
 
 export default function Performance() {
   return (
-    <>
-      <Layout>
-        <Block>
-          <BlockTitle>Performance</BlockTitle>
-        </Block>
-        <ContentsBlock>
-          <ContentsWrap>
-            <Link href="/performance/001">
-              <ContentsTitle>●いつか帰るところ</ContentsTitle>
-            </Link>
-          </ContentsWrap>
-          <ContentsWrap>
-            <Link href="/performance/002">
-              <ContentsTitle>●名探偵コナンメインテーマ</ContentsTitle>
-            </Link>
-          </ContentsWrap>
-          <ContentsWrap>
-            <Link href="/performance/003">
-              <ContentsTitle>●恋愛レボリューション21</ContentsTitle>
-            </Link>
-          </ContentsWrap>
-        </ContentsBlock>
-        <ButtonWrap>
-          <Link href="/">
-            <Button>
-              <ButtonText>BACK</ButtonText>
-            </Button>
+    <Layout title="Performance">
+      <Block>
+        <BlockTitle>Performance</BlockTitle>
+      </Block>
+      <ContentsBlock>
+        <ContentsWrap>
+          <Link href="/performance/001">
+            <ContentsTitle>●いつか帰るところ</ContentsTitle>
           </Link>
-        </ButtonWrap>
-      </Layout>
-    </>
+        </ContentsWrap>
+        <ContentsWrap>
+          <Link href="/performance/002">
+            <ContentsTitle>●名探偵コナンメインテーマ</ContentsTitle>
+          </Link>
+        </ContentsWrap>
+        <ContentsWrap>
+          <Link href="/performance/003">
+            <ContentsTitle>●恋愛レボリューション21</ContentsTitle>
+          </Link>
+        </ContentsWrap>
+      </ContentsBlock>
+      <ButtonWrap>
+        <Link href="/">
+          <Button>
+            <ButtonText>BACK</ButtonText>
+          </Button>
+        </Link>
+      </ButtonWrap>
+    </Layout>
   );
 }

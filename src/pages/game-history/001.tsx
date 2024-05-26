@@ -13,10 +13,8 @@ export default function GameHistory() {
     link: "https://www.jp.square-enix.com/game/detail/ff9/",
   };
   return (
-    <>
-      <Layout>
-        <GameHistoryPage contents={contents} />
-      </Layout>
-    </>
+    <Layout title="GameHistory">
+      <GameHistoryPage contents={contents} />
+    </Layout>
   );
 }

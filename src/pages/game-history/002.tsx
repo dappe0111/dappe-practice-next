@@ -13,10 +13,8 @@ export default function GameHistory() {
     link: "https://www.nintendo.com/jp/software/feature/nintendo-classics/n-1635_j/index.html",
   };
   return (
-    <>
-      <Layout>
-        <GameHistoryPage contents={contents} />
-      </Layout>
-    </>
+    <Layout title="GameHistory">
+      <GameHistoryPage contents={contents} />
+    </Layout>
   );
 }

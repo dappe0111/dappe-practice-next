@@ -22,10 +22,8 @@ export default function Performance() {
     videoId: "SqeLhpPZY9o",
   };
   return (
-    <>
-      <Layout>
-        <PerformancePage contents={contents} />
-      </Layout>
-    </>
+    <Layout title="Performance">
+      <PerformancePage contents={contents} />
+    </Layout>
   );
 }

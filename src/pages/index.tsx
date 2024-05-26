@@ -87,58 +87,56 @@ const getBlockStyle = (category?: string) => {
 
 export default function Home() {
   return (
-    <>
-      <Layout>
-        <Block category="top">
-          <BlockTitle>dappe-practice</BlockTitle>
+    <Layout title="TOP">
+      <Block category="top">
+        <BlockTitle>dappe-practice</BlockTitle>
+        <Description>
+          過去の実装経験を活かした記事や、趣味にまつわる話題まで
+          <br />
+          ジャンルを問わず、格納していきます。
+        </Description>
+      </Block>
+      <BlockWrap>
+        <Block category="performance">
+          <BlockTitle>Performance</BlockTitle>
           <Description>
-            過去の実装経験を活かした記事や、趣味にまつわる話題まで
-            <br />
-            ジャンルを問わず、格納していきます。
+            AKAIのEWI SOLOを使って、様々なジャンルの曲を練習しています。EWI
+            SOLOの多種多様なサウンドをお楽しみください。
           </Description>
+          <ButtonWrap>
+            <Link href="/performance">
+              <Button>
+                <ButtonText>MORE</ButtonText>
+              </Button>
+            </Link>
+          </ButtonWrap>
         </Block>
-        <BlockWrap>
-          <Block category="performance">
-            <BlockTitle>Performance</BlockTitle>
-            <Description>
-              AKAIのEWI SOLOを使って、様々なジャンルの曲を練習しています。EWI
-              SOLOの多種多様なサウンドをお楽しみください。
-            </Description>
-            <ButtonWrap>
-              <Link href="/performance">
-                <Button>
-                  <ButtonText>MORE</ButtonText>
-                </Button>
-              </Link>
-            </ButtonWrap>
-          </Block>
-          <Block category="game">
-            <BlockTitle>Game History</BlockTitle>
-            <Description>
-              今まで私が生きてきた中でプレイしてきたTVゲームを振り返る場です。ネタバレがない範囲で、所感やコメントを残しています。
-            </Description>
-            <ButtonWrap>
-              <Link href="/game-history">
-                <Button>
-                  <ButtonText>MORE</ButtonText>
-                </Button>
-              </Link>
-            </ButtonWrap>
-          </Block>
-          <Block>
-            <BlockTitle>Technic</BlockTitle>
-            <Description>公開までしばらくお待ちください。</Description>
-          </Block>
-          <Block>
-            <BlockTitle>Hello! Project</BlockTitle>
-            <Description>公開までしばらくお待ちください。</Description>
-          </Block>
-          <Block category="top">
-            <BlockTitle>Coming Soon...</BlockTitle>
-            <Description>公開までしばらくお待ちください。</Description>
-          </Block>
-        </BlockWrap>
-      </Layout>
-    </>
+        <Block category="game">
+          <BlockTitle>Game History</BlockTitle>
+          <Description>
+            今まで私が生きてきた中でプレイしてきたTVゲームを振り返る場です。ネタバレがない範囲で、所感やコメントを残しています。
+          </Description>
+          <ButtonWrap>
+            <Link href="/game-history">
+              <Button>
+                <ButtonText>MORE</ButtonText>
+              </Button>
+            </Link>
+          </ButtonWrap>
+        </Block>
+        <Block>
+          <BlockTitle>Technic</BlockTitle>
+          <Description>公開までしばらくお待ちください。</Description>
+        </Block>
+        <Block>
+          <BlockTitle>Hello! Project</BlockTitle>
+          <Description>公開までしばらくお待ちください。</Description>
+        </Block>
+        <Block category="top">
+          <BlockTitle>Coming Soon...</BlockTitle>
+          <Description>公開までしばらくお待ちください。</Description>
+        </Block>
+      </BlockWrap>
+    </Layout>
   );
 }

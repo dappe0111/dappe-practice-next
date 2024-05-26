@@ -86,31 +86,29 @@ const ButtonText = styled.div`
 
 export default function GameHistory() {
   return (
-    <>
-      <Layout>
-        <Block>
-          <BlockTitle>Game History</BlockTitle>
-        </Block>
-        <ContentsBlock>
-          <ContentsWrap>
-            <Link href="/game-history/001">
-              <ContentsTitle>●ファイナルファンタジーIX</ContentsTitle>
-            </Link>
-          </ContentsWrap>
-          <ContentsWrap>
-            <Link href="/game-history/002">
-              <ContentsTitle>●牧場物語2</ContentsTitle>
-            </Link>
-          </ContentsWrap>
-        </ContentsBlock>
-        <ButtonWrap>
-          <Link href="/">
-            <Button>
-              <ButtonText>BACK</ButtonText>
-            </Button>
+    <Layout title="GameHistory">
+      <Block>
+        <BlockTitle>Game History</BlockTitle>
+      </Block>
+      <ContentsBlock>
+        <ContentsWrap>
+          <Link href="/game-history/001">
+            <ContentsTitle>●ファイナルファンタジーIX</ContentsTitle>
           </Link>
-        </ButtonWrap>
-      </Layout>
-    </>
+        </ContentsWrap>
+        <ContentsWrap>
+          <Link href="/game-history/002">
+            <ContentsTitle>●牧場物語2</ContentsTitle>
+          </Link>
+        </ContentsWrap>
+      </ContentsBlock>
+      <ButtonWrap>
+        <Link href="/">
+          <Button>
+            <ButtonText>BACK</ButtonText>
+          </Button>
+        </Link>
+      </ButtonWrap>
+    </Layout>
   );
 }
