@@ -15,7 +15,7 @@ const Main = styled.main`
   }
 `;
 
-export default function Performance() {
+export default function GameHistory() {
   const contents = {
     title: "ファイナルファンタジーIX",
     seller: "スクウェア",
@@ -28,7 +28,7 @@ export default function Performance() {
   };
   return (
     <>
-      <CommonMeta title="Performance" />
+      <CommonMeta title="GameHistory" />
       <Header />
       <Main>
         <GameHistoryPage contents={contents} />

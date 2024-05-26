@@ -112,6 +112,11 @@ export default function GameHistory() {
               <ContentsTitle>●ファイナルファンタジーIX</ContentsTitle>
             </Link>
           </ContentsWrap>
+          <ContentsWrap>
+            <Link href="/game-history/002">
+              <ContentsTitle>●牧場物語2</ContentsTitle>
+            </Link>
+          </ContentsWrap>
         </ContentsBlock>
         <ButtonWrap>
           <Link href="/">
