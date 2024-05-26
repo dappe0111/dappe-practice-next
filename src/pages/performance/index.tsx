@@ -104,11 +104,11 @@ export default function Performance() {
             <ContentsTitle>●名探偵コナンメインテーマ</ContentsTitle>
           </Link>
         </ContentsWrap>
-        {/* <ContentsWrap>
+        <ContentsWrap>
           <Link href="/performance/003">
             <ContentsTitle>●恋愛レボリューション21</ContentsTitle>
           </Link>
-        </ContentsWrap> */}
+        </ContentsWrap>
       </ContentsBlock>
       <ButtonWrap>
         <Link href="/">
