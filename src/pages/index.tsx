@@ -1,19 +1,6 @@
-import Header from "@/components/LV3/Header";
 import styled from "styled-components";
-import CommonMeta from "@/components/LV1/CommonMeta";
 import Link from "next/link";
-
-const Main = styled.main`
-  max-width: 1440px;
-  margin: 64px auto 0;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
-  @media screen and (max-width: 599px) {
-    margin-top: 56px;
-  }
-`;
+import Layout from "@/components/Templates/Base";
 
 const BlockWrap = styled.main`
   width: 100%;
@@ -101,9 +88,7 @@ const getBlockStyle = (category?: string) => {
 export default function Home() {
   return (
     <>
-      <CommonMeta title="TOP" />
-      <Header />
-      <Main>
+      <Layout>
         <Block category="top">
           <BlockTitle>dappe-practice</BlockTitle>
           <Description>
@@ -153,7 +138,7 @@ export default function Home() {
             <Description>公開までしばらくお待ちください。</Description>
           </Block>
         </BlockWrap>
-      </Main>
+      </Layout>
     </>
   );
 }

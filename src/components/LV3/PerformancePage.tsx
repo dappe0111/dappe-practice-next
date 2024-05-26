@@ -99,12 +99,14 @@ const PerformancePage: React.FC<Props> = ({ contents }) => {
           </ContentsDescription>
         </DescriptionWrap>
       </ContentsBlock>
-      <UpdateBlock>
-        ※再生すると音声が流れます。音量にご注意ください。
-        <VideoWrap>
-          <YouTubeEmbed videoid={contents.videoId} />
-        </VideoWrap>
-      </UpdateBlock>
+      {contents.videoId && (
+        <UpdateBlock>
+          ※再生すると音声が流れます。音量にご注意ください。
+          <VideoWrap>
+            <YouTubeEmbed videoid={contents.videoId} />
+          </VideoWrap>
+        </UpdateBlock>
+      )}
       <ButtonWrap>
         <Link href="/performance">
           <Button>

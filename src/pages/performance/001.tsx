@@ -1,20 +1,5 @@
-import Header from "@/components/LV3/Header";
-import styled from "styled-components";
-import CommonMeta from "@/components/LV1/CommonMeta";
 import PerformancePage from "@/components/LV3/PerformancePage";
-
-const Main = styled.main`
-  max-width: 1440px;
-  height: 100vh;
-  margin: 64px auto 0;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
-  @media screen and (max-width: 599px) {
-    margin-top: 56px;
-  }
-`;
+import Layout from "@/components/Templates/Base";
 
 export default function Performance() {
   const contents = {
@@ -31,11 +16,9 @@ export default function Performance() {
   };
   return (
     <>
-      <CommonMeta title="Performance" />
-      <Header />
-      <Main>
+      <Layout>
         <PerformancePage contents={contents} />
-      </Main>
+      </Layout>
     </>
   );
 }
