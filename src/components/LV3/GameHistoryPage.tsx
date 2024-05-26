@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Link from "next/link";
+import React, { useState } from "react";
 
 const ContentsBlock = styled.div`
   width: 100%;
@@ -45,9 +46,12 @@ const UpdateBlock = styled.div`
   }
 `;
 
-const VideoWrap = styled.div`
-  width: 100%;
-  max-width: 640px;
+const LinkText = styled.a`
+  transition: 0.4s;
+  &:hover {
+    text-decoration: none;
+    opacity: 0.64;
+  }
 `;
 
 const ButtonWrap = styled.div`
@@ -79,11 +83,23 @@ const ButtonText = styled.div`
   color: #ffffff;
 `;
 
+type Contents = {
+  title: string;
+  seller: string;
+  model: string;
+  releaseDate: string;
+  comment: string;
+  merit: string;
+  demerit: string;
+  link: string;
+};
+
 type Props = {
-  contents: any;
+  contents: Contents;
 };
 
 const PerformancePage: React.FC<Props> = ({ contents }) => {
+  const [link] = useState<string>(contents.link);
   return (
     <>
       <ContentsBlock>
@@ -92,11 +108,24 @@ const PerformancePage: React.FC<Props> = ({ contents }) => {
           <ContentsDescription>●販売元：{contents.seller}</ContentsDescription>
           <ContentsDescription>●機種：{contents.model}</ContentsDescription>
           <ContentsDescription>
+            ●発売日：{contents.releaseDate}
+          </ContentsDescription>
+          <ContentsDescription>
             <div dangerouslySetInnerHTML={{ __html: contents.comment }}></div>
           </ContentsDescription>
-          <ContentsDescription>{contents.merit}</ContentsDescription>
-          <ContentsDescription>{contents.demerit}</ContentsDescription>
-          <ContentsDescription>●外部リンク：更新中</ContentsDescription>
+          <ContentsDescription>
+            <div dangerouslySetInnerHTML={{ __html: contents.merit }}></div>
+          </ContentsDescription>
+          <ContentsDescription>
+            <div dangerouslySetInnerHTML={{ __html: contents.demerit }}></div>
+          </ContentsDescription>
+          <ContentsDescription>
+            ●外部リンク：
+            <br />
+            <LinkText href={link} target="_blank" rel="noopener noreferrer">
+              {link}
+            </LinkText>
+          </ContentsDescription>
         </DescriptionWrap>
       </ContentsBlock>
       <ButtonWrap>
