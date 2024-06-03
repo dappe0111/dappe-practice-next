@@ -80,6 +80,8 @@ const getBlockStyle = (category?: string) => {
     case "game":
       return `background-image: linear-gradient(to top,rgba(0, 0, 0, 0.7) 0%,
           rgba(255, 255, 225, 0.7) 100%),url(/bg-block-2.jpg);background-size: cover;background-position: center;`;
+    case "hello":
+      return `background-image: url(/bg-block-4.jpg);background-size: cover;background-position: center; color: #ffffff;`;
     default:
       return ``;
   }
@@ -128,9 +130,19 @@ export default function Home() {
           <BlockTitle>Technic</BlockTitle>
           <Description>公開までしばらくお待ちください。</Description>
         </Block>
-        <Block>
+        <Block category="hello">
           <BlockTitle>Hello! Project</BlockTitle>
-          <Description>公開までしばらくお待ちください。</Description>
+          <Description>
+            Hello!
+            Project楽曲の魅力を伝えるページです。新旧問わず、音楽的に面白い作りの楽曲やおすすめの楽曲などをピックアップして紹介します。
+          </Description>
+          <ButtonWrap>
+            <Link href="/hello-project">
+              <Button>
+                <ButtonText>MORE</ButtonText>
+              </Button>
+            </Link>
+          </ButtonWrap>
         </Block>
         <Block category="top">
           <BlockTitle>Coming Soon...</BlockTitle>
