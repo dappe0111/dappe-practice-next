@@ -106,6 +106,16 @@ export default function HelloProject() {
         <BlockTitle>Hello! Project</BlockTitle>
       </Block>
       <GroupeWrap>
+        <GroupeTitle>♪℃-ute</GroupeTitle>
+        <ContentsBlock>
+          <ContentsWrap>
+            <Link href="/hello-project/c-ute/001">
+              <ContentsTitle>●悲しきヘブン (Single Version)</ContentsTitle>
+            </Link>
+          </ContentsWrap>
+        </ContentsBlock>
+      </GroupeWrap>
+      <GroupeWrap>
         <GroupeTitle>♪BEYOOOOONDS</GroupeTitle>
         <ContentsBlock>
           <ContentsWrap>

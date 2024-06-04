@@ -120,6 +120,14 @@ const PerformancePage: React.FC<Props> = ({ contents }) => {
           </VideoWrap>
         </UpdateBlock>
       )}
+      {contents.addVideoId && (
+        <UpdateBlock>
+          {contents.addVideoComment}
+          <VideoWrap>
+            <YouTubeEmbed videoid={contents.addVideoId} />
+          </VideoWrap>
+        </UpdateBlock>
+      )}
       <ButtonWrap>
         <Link href="/hello-project">
           <Button>
