@@ -61,6 +61,7 @@ const Header: React.FC = () => {
           backgroundColor: "#5f5d5b",
           position: "fixed",
           top: "0",
+          zIndex: "9999",
         }}
       >
         <StyledToolbar>
