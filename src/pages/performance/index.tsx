@@ -109,6 +109,11 @@ export default function Performance() {
             <ContentsTitle>●恋愛レボリューション21</ContentsTitle>
           </Link>
         </ContentsWrap>
+        <ContentsWrap>
+          <Link href="/performance/004">
+            <ContentsTitle>●LOVEマシーン</ContentsTitle>
+          </Link>
+        </ContentsWrap>
       </ContentsBlock>
       <ButtonWrap>
         <Link href="/">
