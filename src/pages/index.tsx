@@ -70,10 +70,25 @@ const ButtonText = styled.div`
   color: #ffffff;
 `;
 
+const LinkWrap = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+`;
+
+const LinkText = styled.div`
+  font-size: 16px;
+  transition: 0.4s;
+  &:hover {
+    text-decoration: none;
+    opacity: 0.64;
+  }
+`;
+
 const getBlockStyle = (category?: string) => {
   switch (category) {
     case "top":
-      return `width: 100%`;
+      return `width: 100%; gap: 16px;`;
     case "performance":
       return `background-image: linear-gradient(to top,rgba(0, 0, 0, 0.7) 0%,
           rgba(255, 255, 225, 0.7) 100%),url(/bg-block-1.jpg);background-size: cover;background-position: bottom;`;
@@ -99,6 +114,28 @@ export default function Home() {
         </Description>
       </Block>
       <BlockWrap>
+        <Block category="top">
+          <BlockTitle>NEWS</BlockTitle>
+          <LinkWrap>
+            <LinkText>
+              <Link href="/game-history/003">
+                2024.06.24　GameHistoryの「ゼルダの伝説
+                時のオカリナ」を公開しました。
+              </Link>
+            </LinkText>
+            <LinkText>
+              <Link href="/performance/004">
+                2024.06.16　Performanceの「LOVEマシーン」を公開しました。
+              </Link>
+            </LinkText>
+            <LinkText>
+              <Link href="/hello-project/c-ute/001">
+                2024.06.04　HelloProjectの「悲しきヘブン (Single
+                Version)」を公開しました。
+              </Link>
+            </LinkText>
+          </LinkWrap>
+        </Block>
         <Block category="performance">
           <BlockTitle>Performance</BlockTitle>
           <Description>
@@ -143,10 +180,6 @@ export default function Home() {
               </Button>
             </Link>
           </ButtonWrap>
-        </Block>
-        <Block category="top">
-          <BlockTitle>Coming Soon...</BlockTitle>
-          <Description>公開までしばらくお待ちください。</Description>
         </Block>
       </BlockWrap>
     </Layout>
