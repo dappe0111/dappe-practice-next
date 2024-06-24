@@ -118,6 +118,12 @@ export default function Home() {
           <BlockTitle>NEWS</BlockTitle>
           <LinkWrap>
             <LinkText>
+              <Link href="/hello-project/kobushi/001">
+                2024.06.25　Hello!
+                Projectの「念には念(念入りVer.)」を公開しました。
+              </Link>
+            </LinkText>
+            <LinkText>
               <Link href="/game-history/003">
                 2024.06.24　GameHistoryの「ゼルダの伝説
                 時のオカリナ」を公開しました。
@@ -130,7 +136,7 @@ export default function Home() {
             </LinkText>
             <LinkText>
               <Link href="/hello-project/c-ute/001">
-                2024.06.04　HelloProjectの「悲しきヘブン (Single
+                2024.06.04　Hello! Projectの「悲しきヘブン (Single
                 Version)」を公開しました。
               </Link>
             </LinkText>

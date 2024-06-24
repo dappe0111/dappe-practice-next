@@ -116,6 +116,16 @@ export default function HelloProject() {
         </ContentsBlock>
       </GroupeWrap>
       <GroupeWrap>
+        <GroupeTitle>♪こぶしファクトリー</GroupeTitle>
+        <ContentsBlock>
+          <ContentsWrap>
+            <Link href="/hello-project/kobushi/001">
+              <ContentsTitle>●念には念(念入りVer.)</ContentsTitle>
+            </Link>
+          </ContentsWrap>
+        </ContentsBlock>
+      </GroupeWrap>
+      <GroupeWrap>
         <GroupeTitle>♪BEYOOOOONDS</GroupeTitle>
         <ContentsBlock>
           <ContentsWrap>
