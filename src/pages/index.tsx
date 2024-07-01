@@ -118,6 +118,11 @@ export default function Home() {
           <BlockTitle>NEWS</BlockTitle>
           <LinkWrap>
             <LinkText>
+              <Link href="/performance/006">
+                2024.07.02　Performanceの「サマーナイトタウン」を公開しました。
+              </Link>
+            </LinkText>
+            <LinkText>
               <Link href="/performance/005">
                 2024.07.01　Performanceの「泡沫サタデーナイト!」を公開しました。
               </Link>
