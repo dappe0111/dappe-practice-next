@@ -118,6 +118,11 @@ export default function Home() {
           <BlockTitle>NEWS</BlockTitle>
           <LinkWrap>
             <LinkText>
+              <Link href="/performance/005">
+                2024.07.01　Performanceの「泡沫サタデーナイト!」を公開しました。
+              </Link>
+            </LinkText>
+            <LinkText>
               <Link href="/hello-project/kobushi/001">
                 2024.06.25　Hello!
                 Projectの「念には念(念入りVer.)」を公開しました。
