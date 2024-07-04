@@ -15,14 +15,18 @@ const StyledToolbar = styled(Toolbar)`
   }
 `;
 
-const IconWrap = styled.div`
-  width: 100%;
+const IconWrap = styled(Link)`
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  transition: 0.4s;
+  &:hover {
+    text-decoration: none;
+    opacity: 0.64;
+  }
 `;
 
-const LinkIcon = styled(Link)`
+const LinkIcon = styled.div`
   width: 24px;
   height: auto;
   display: flex;
@@ -35,11 +39,6 @@ const HomeButton = styled(IconButton)`
   padding: 0;
   border: none;
   background: none;
-  transition: 0.4s;
-  &:hover {
-    text-decoration: none;
-    opacity: 0.64;
-  }
 `;
 
 const HomeIcon = styled.img`
@@ -65,9 +64,9 @@ const Header: React.FC = () => {
         }}
       >
         <StyledToolbar>
-          <IconWrap>
+          <IconWrap href="/">
             <HomeButton>
-              <LinkIcon href="/">
+              <LinkIcon>
                 <HomeIcon src="/main-icon.svg" alt="" />
               </LinkIcon>
             </HomeButton>
